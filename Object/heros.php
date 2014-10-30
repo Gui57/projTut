@@ -19,7 +19,7 @@ class Heros
 	
 	
     
-    public function Heros($Name,$Key,$Class,$GoldV,$Strength,$Light,$XP,$lvl,$goldC,$AtkType$$AtkV,$Effect1,$Effect2,$VP){
+    public function Heros($Name,$Key,$Class,$GoldV,$Strength,$Light,$XP,$lvl,$GoldC,$AtkType,$$AtkV,$Effect1,$Effect2,$VP){
 	$this->Name=$Name;
 	$this->Key=$Key;
 	$this->Clas=$Clas;
@@ -82,11 +82,14 @@ class Heros
 	public function setName($Name){
 	$this->Name=$Name;
 	}
-	public function setClas($Key){
+	public function setKey($Key){
 	$this->Key=$Key;
 	}
-	public function setGoldV($Clas){
+	public function setClas($Clas){
 	$this->Clas=$Clas;
+	}
+	public setGoldV($GoldV){
+	$this->GoldV=$GoldV;
 	}
 	public function setStrenght($Strength){
 	$this->Strenght=$Strength;
@@ -112,7 +115,7 @@ class Heros
 	public function setEffect1($AtkEffect1){
 	$this->Effect1=$Effect1;
 	}
-	public function setAtkType($Effect2){
+	public function setEffect2($Effect2){
 	$this->Effect2=$Effect2;
 	}	
 	public function setVP($VP){
